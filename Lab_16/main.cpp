@@ -3,30 +3,33 @@ using namespace std;
 
 class color {
 private:
-    int red;
-    int green;
-    int blue;
+    string colorName;
+    int     colorNum;
+    
+
 
 public:
     
-    color()                  { name = "none"; age = 0; }
-    color(string n)          { name = n; age = 0; }
-    color(string n, int a)   { name = n; age = a; }
+    color()                  { colorName = "none"; colorNum = 0; }
+    color(string n)          { colorName = n; colorNum = 0; }
+    color(string n, int a)   { colorName = n; colorNum = a; }
    
-    int getcolor()        { return red; }
-    void setcolor(string n)  { name = n; }
-    int getAge()            { return age; }
-    void setAge(int a)      { age = a; }
+    string getcolorName()        { return colorName; }
+    void setcolorName(string n)  { colorName = n; }
+
+    int getColorNum()           {return colorNum; }
+    void setcolorNum(int a)     { colorNum = a; }
+
 };
 
 int main() {
-    Goat herd_1;
-    cout << herd_1.getName() << " " << herd_1.getAge() << endl;   
+    color red;
+    cout << herd_1.getcolorName() << " " << red.getColorNum() << endl;   
     
-    Goat herd_2("Joe");
-    cout << herd_2.getName() << " " << herd_2.getAge() << endl;
+    color green("green");
+    cout << herd_2.getcolorName() << " " << green.getColorNum() << endl;
     
-    Goat herd_3("Jane", 12);
-    cout << herd_3.getName() << " " << herd_3.getAge() << endl;
+    color blue("blue", 12);
+    cout << herd_3.getcolorName() << " " << blue.getColorNum() << endl;
 return 0;
 }
