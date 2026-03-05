@@ -24,12 +24,12 @@ public:
 
 int main() {
     color red;
-    cout << herd_1.getcolorName() << " " << red.getColorNum() << endl;   
+    cout << red.getcolorName() << " " << red.getColorNum() << endl;   
     
     color green("green");
-    cout << herd_2.getcolorName() << " " << green.getColorNum() << endl;
+    cout << green.getcolorName() << " " << green.getColorNum() << endl;
     
     color blue("blue", 12);
-    cout << herd_3.getcolorName() << " " << blue.getColorNum() << endl;
-return 0;
+    cout << blue.getcolorName() << " " << blue.getColorNum() << endl;
+    return 0;
 }
